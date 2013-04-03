@@ -6,7 +6,7 @@ import org.openmrs.annotation.Handler;
 import org.openmrs.api.context.Context;
 import org.openmrs.logic.rule.definition.RuleDefinition;
 import org.openmrs.logic.rule.definition.RuleDefinitionService;
-import org.openmrs.module.jsslab.impl.ExternalObjectsServiceImpl;
+//import org.openmrs.module.jsslab.impl.ExternalObjectsServiceImpl;
 import org.openmrs.module.webservices.rest.web.RequestContext;
 import org.openmrs.module.webservices.rest.web.RestConstants;
 import org.openmrs.module.webservices.rest.web.annotation.Resource;
@@ -41,7 +41,8 @@ public class RuleDefinitionResource extends MetadataDelegatingCrudResource<RuleD
 		}
 		
 //		throw new NotImplementedException("getByUuid method not available for RuleDefinitions");
-		return Context.getService(ExternalObjectsServiceImpl.class).getRuleDefinitionByUuid(uniqueId);
+//		return Context.getService(ExternalObjectsServiceImpl.class).getRuleDefinitionByUuid(uniqueId);
+                return null;
 	}
 
 	@Override
