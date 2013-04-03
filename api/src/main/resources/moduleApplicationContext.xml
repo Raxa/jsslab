@@ -230,7 +230,7 @@
 			</list>
 		</property>
 	</bean>
-	<bean parent="serviceContext">
+<!--	<bean parent="serviceContext">
 		<property name="moduleService">
 			<list>
 				<value>org.openmrs.module.jsslab.ExternalObjectsService</value>
@@ -263,6 +263,6 @@
 				</bean>
 			</list>
 		</property>
-	</bean>
+	</bean>-->
 	
 </beans>
