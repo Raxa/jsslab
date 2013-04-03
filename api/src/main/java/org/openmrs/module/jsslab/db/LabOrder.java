@@ -39,6 +39,7 @@ public class LabOrder extends Order {
 	
 	public static final long serialVersionUID = 4334343L;
 	
+        public static int orderTypeIdLab =  33333001;
 	
 	private String labOrderId;
 
@@ -76,10 +77,9 @@ public class LabOrder extends Order {
 				}
 		}
 */
-		
-		
-		Integer orderTypeId = Integer.parseInt(gpx.getPropertyValue());
-		OrderType orderType = Context.getOrderService().getOrderType(orderTypeId);
+                
+//		Integer orderTypeId = Integer.parseInt(gpx.getPropertyValue());
+		OrderType orderType = Context.getOrderService().getOrderType(orderTypeIdLab);
 		super.setOrderType(orderType);
 		return;
 	}
